@@ -20,31 +20,45 @@ function sumArray(arr){
 }
 
 function meanArray(arr){
-    let mean = 0;
+    let value = 0;
     for(val of arr){
-        mean += val;
+        value += val;
     }
-    mean = mean / arr.length;
-    console.log("The average is: ", mean);
-    return mean;
+    value = value / arr.length;
+    console.log("The average is: ", value);
+    return value;
 }
 
 function doubleArray(arr){
-    const doubled = arr.map(num => num * 2);
-    console.log(doubled);
-    return doubled;
+    const value = arr.map(num => num * 2);
+    console.log(value);
+    return value;
 }
 
 function squareArray(arr){
-    const squared = arr.map(num => num * num);
-    console.log(squared);
-    return squared;
+    const value = arr.map(num => num * num);
+    console.log(value);
+    return value;
 }
 
 function minValue(arr){
+    let value = arr[0];
+    for(let i = 1; i < arr.length; i++){
+        if (arr[i] < value){
+            value = arr[i];
+        }}
+    console.log("The lowest value is: ", value);
+    return value;
 }
 
 function maxValue(arr){
+    let value = arr[0];
+    for(let i = 1; i < arr.length; i++){
+        if (arr[i] > value){
+            value = arr[i];
+        }}
+        console.log("The largest value is: ", value);
+        return value;
 }
 
 function countEvens(arr){
