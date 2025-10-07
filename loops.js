@@ -20,12 +20,25 @@ function sumArray(arr){
 }
 
 function meanArray(arr){
+    let mean = 0;
+    for(val of arr){
+        mean += val;
+    }
+    mean = mean / arr.length;
+    console.log("The average is: ", mean);
+    return mean;
 }
 
 function doubleArray(arr){
+    const doubled = arr.map(num => num * 2);
+    console.log(doubled);
+    return doubled;
 }
 
 function squareArray(arr){
+    const squared = arr.map(num => num * num);
+    console.log(squared);
+    return squared;
 }
 
 function minValue(arr){
