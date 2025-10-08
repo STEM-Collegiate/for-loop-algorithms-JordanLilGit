@@ -62,26 +62,91 @@ function maxValue(arr){
 }
 
 function countEvens(arr){
+    let value = 0;
+    for(let i = 0; i < arr.length; i++){
+        if (arr[i] % 2 === 0){
+            value += 1;
+        }}
+        console.log("There are", value, "even numbers");
+        return value;
 }
 
 function countPositives(arr){
+    let value = 0;
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] > 0){
+            value += 1;
+        }}
+        console.log("There are", value, "positive numbers");
+        return value;
 }
 
 function filterOdds(arr){
+    const newArray = [];
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] % 2 !== 0){
+            newArray.push(arr[i]);
+        }}
+        console.log(newArray);
+        return newArray;
 }
 
 function filterNegatives(arr){
+    const newArray = [];
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] < 0){
+            newArray.push(arr[i]);
+        }}
+        console.log(newArray);
+        return newArray;
 }
 
 function negativeExists(arr){
+    let value = false;
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] < 0){
+            value = true;
+        }}
+        console.log(value);
+        return value;
 }
 
 function firstEvenNumber(arr){
+    let value = null;
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] % 2 === 0){
+            value = arr[i];
+            console.log("The first even number is", value);
+            return value;
+        }}
+        console.log("The first even number is", value);
+        return value;
 }
 
 function allElementsPositive(arr){
+    let value = true;
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] === 0){
+            value = false;
+        }else if(arr[i] < 0){
+            value = false;
+        }else if(arr[i] == null){
+            value = false;
+        }else if(arr[i] = undefined){
+            value = false;
+        }}
+        console.log(value);
+        return value;
 }
 
 function allElementsDefined(arr){
+    let value = true;
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] == null){
+            value = false;
+        }else if(arr[i] = undefined){
+            value = false;
+        }}
+        console.log(value);
+        return value;
 }
-
